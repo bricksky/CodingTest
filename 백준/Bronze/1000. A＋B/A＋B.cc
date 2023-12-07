@@ -1,9 +1,17 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
-int main() { 
-    int A;
-	int B;
-	
-	scanf("%d%d", &A,&B);
-    printf("%d", A+B);		
-	}
+int main()
+{
+    int a;
+    int b;
+    int total;
+    
+    cin >> a;
+    cin >> b;
+    
+    total = a + b;
+    
+    cout << total << endl;
+    return 0;
+}
