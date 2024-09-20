@@ -13,7 +13,7 @@ int main(){
 
         cin >> name >> credit >> grade;
 
-        if(grade == "P"){
+        if(grade=="P"){
             continue;
         } else if (grade == "A+"){
             total += credit * 4.5;
@@ -40,15 +40,14 @@ int main(){
             total += credit * 1.0;
             total_credit += credit;
         } else if (grade == "F"){
-            total += credit * 0.0;  // 성적은 0.0으로 처리해야 함
+            total += credit * 0.0;
             total_credit += credit;
         }
     }
 
     double finalResult = total / total_credit;
-
-    cout << fixed;            // 소수점 고정
-    cout.precision(6);        // 소수점 이하 6자리까지 출력
+    cout << fixed;
+    cout.precision(6);
     cout << finalResult;
 
     return 0;
