@@ -18,4 +18,9 @@ int main(){
     sort(y, y+n);
 
     cout << (x[n-1]-x[0]) * (y[n-1]-y[0]); 
+
+    delete[] x;
+    delete[] y;
+
+    return 0;
 }
